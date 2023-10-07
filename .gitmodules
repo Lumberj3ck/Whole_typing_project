@@ -1,9 +1,9 @@
 [submodule "frontend_vue"]
 	path = frontend_vue
-	url = ./frontend_vue
+	url = https://github.com/Lumberj3ck/typing_trainer.git
 [submodule "typing_trainer_rest"]
 	path = typing_trainer_rest
-	url = ./typing_trainer_rest
+	url = https://github.com/Lumberj3ck/typing_api.git
 [submodule "typing_api"]
 	path = typing_api
 	url = https://github.com/Lumberj3ck/typing_api.git
