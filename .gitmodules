@@ -1,0 +1,6 @@
+[submodule "frontend_vue"]
+	path = frontend_vue
+	url = ./frontend_vue
+[submodule "typing_trainer_rest"]
+	path = typing_trainer_rest
+	url = ./typing_trainer_rest

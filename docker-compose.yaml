@@ -2,13 +2,30 @@ services:
   backend:
     build: ./typing_trainer_rest 
     # command: python /app/manage.py runserver 0.0.0.0:8000
-    command: gunicorn ./typing_trainer_rest/typing_trainer.wsgi:application --bind 0.0.0.0:8000
-    ports:
-      - "8000:8000"
+    command: gunicorn typing_trainer.wsgi:application --bind 0.0.0.0:8000
+    # command: gunicorn myapp.wsgi:application --bind unix:/tmp/gunicorn.sock
+    # ports:
+    #   - "8000:8000"
+    volumes:
+      - static_volume:/app/static
+    expose:
+      - 8000
     env_file:
       - ./.env.dev
+
+  nginx:
+    build: ./typing_trainer_rest/nginx
+    ports:
+      - 8000:80
+    volumes:
+      - static_volume:/app/static
+    depends_on:
+      - backend
 
   frontend:
     build: ./frontend_vue
     ports:
       - "5173:5173"
+
+volumes:
+  static_volume:
