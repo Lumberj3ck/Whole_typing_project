@@ -4,3 +4,9 @@
 [submodule "typing_trainer_rest"]
 	path = typing_trainer_rest
 	url = ./typing_trainer_rest
+[submodule "typing_api"]
+	path = typing_api
+	url = https://github.com/Lumberj3ck/typing_api.git
+[submodule "typing_api_rest"]
+	path = typing_api_rest
+	url = https://github.com/Lumberj3ck/typing_api.git

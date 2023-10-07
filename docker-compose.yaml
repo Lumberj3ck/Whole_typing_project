@@ -13,19 +13,21 @@ services:
     env_file:
       - ./.env.dev
 
+  fronted:
+    build: ./frontend_vue
+    volumes:
+      - vue_dist:/app/dist
+
   nginx:
-    build: ./typing_trainer_rest/nginx
+    build: ./nginx
     ports:
-      - 8000:80
+      - 80:80
     volumes:
       - static_volume:/app/static
+      - vue_dist:/app/vue/dist
     depends_on:
       - backend
 
-  frontend:
-    build: ./frontend_vue
-    ports:
-      - "5173:5173"
-
 volumes:
   static_volume:
+  vue_dist:
