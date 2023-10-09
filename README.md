@@ -22,12 +22,12 @@ Before you can run the project locally, make sure you have the following tools a
 
 ## Getting Started
 
-1. Clone this repository to your local machine:
-```bash
+1. Clone this repository to your local machine
+```
 git clone https://github.com/your-username/Whole_typing_project.git
 ```
 2. Navigate to project directory
-```bash
+```
 cd Whole_typing_project
 ```
 3. Docker start
