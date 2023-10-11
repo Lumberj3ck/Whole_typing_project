@@ -5,7 +5,7 @@ Whole Typing Project is a web application that combines a Django API with a Vue.
 
 ## Demo
 
-Check out a working demo of the project at [http://165.227.196.201/](http://165.227.196.201). The demo is hosted on Digital Ocean servers.
+[Working demo](http://typer.us.to/). The demo is hosted on Digital Ocean servers.
 
 ## Prerequisites
 
