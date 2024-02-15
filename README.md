@@ -11,8 +11,8 @@ Whole Typing Project is a web application that combines a Django API with a Vue.
 
 Before you can run the project locally, make sure you have the following tools and technologies installed:
 
-- [Docker](https://www.docker.com/get-started)
-- [Docker Compose](https://docs.docker.com/compose/install/)
+- Docker
+- Docker Compose
 - Git (for cloning the repository)
 
 ## Getting Started
