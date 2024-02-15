@@ -25,8 +25,18 @@ git clone --recursive https://github.com/Lumberj3ck/Whole_typing_project/
 ```
 cd Whole_typing_project
 ```
-3. Docker start
+3. Add your host to allowed hosts variable
+```
+vim ./typing_trainer_rest/.env.prod
+```
+4. Change site url in config.js
+```
+vim ./frontend_vue/src/config.js
+```
+5. Docker start
 ```
 docker compose build
 docker compose up
 ```
+If you encountering issues try to prune volumes and build up again
+
