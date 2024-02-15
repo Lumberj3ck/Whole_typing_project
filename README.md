@@ -19,7 +19,7 @@ Before you can run the project locally, make sure you have the following tools a
 
 1. Clone this repository to your local machine
 ```
-git clone https://github.com/your-username/Whole_typing_project.git
+git clone --recursive https://github.com/Lumberj3ck/Whole_typing_project/
 ```
 2. Navigate to project directory
 ```
